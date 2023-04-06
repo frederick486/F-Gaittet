@@ -2,13 +2,27 @@ import './contact.css'
 import Phone from '../../img/phone.png'
 import Email from '../../img/email.png'
 import Adress from '../../img/address.png'
-import { useRef } from 'react'
+import { useContext, useRef, useState } from 'react'
+import { ThemeContext } from '../../context'
+// import emailjs from 'emailjs'
+
 
 const Contact = () => {
-    const formRef = useRef()
+    const formRef = useRef();
+    const [done, setDone] = useState(false);
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formRef.current, 'YOUR_PUBLIC_KEY')
+        // .then((result) => {
+        //     console.log(result.text);
+                setDone(true)
+        // }, (error) => {
+        //     console.log(error.text);
+        // });        
     }
 
   return (
@@ -38,11 +52,12 @@ const Contact = () => {
                 Officia, at? Pariatur, sed sequi. Ea ducimus error sapiente at, sequi hic, voluptas 
             </p>
             <form ref={formRef} onSubmit={handleSubmit}>
-                <input type="text" placeholder='Name' name='user_name' />
-                <input type="text" placeholder='Subject' name='user_subject' />
-                <input type="text" placeholder='Email' name='user_email' />
-                <textarea rows="5" placeholder='Message' name='message' />
+                <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Name' name='user_name' />
+                <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Subject' name='user_subject' />
+                <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Email' name='user_email' />
+                <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder='Message' name='message' />
                 <button>Submit</button>
+                {done && "Thank for your message ..."}
             </form>
         </div>
       </div>
