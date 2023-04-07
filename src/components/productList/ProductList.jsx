@@ -2,8 +2,10 @@ import './productList.css'
 import Product from '../product/Product'
 // import {products} from '../../data'
 
+import FitClub from '../../img/fitclub.png'
+import Kasa from '../../img/kasa.png'
+import Ohmyfood from '../../img/ohmyfood.png'
 import Booki from '../../img/Booki.png'
-import Linkedin from '../../img/linkedin-feed.png'
 
 const ProductList = () => {
   return (
@@ -28,28 +30,28 @@ const ProductList = () => {
         ))} */}
 
         <Product
-          img={Booki} 
-          link='https://frederick486.github.io/Booki/'
+          img={FitClub} 
+          link='https://fitclub-i6xuyrgis-frederick486.vercel.app/'
         />
         <Product
-          img={Linkedin} 
-          link='https://www.linkedin.com/feed/'
+          img={Kasa} 
+          link='https://kasa-vercel.vercel.app/'
         />
         <Product
-          img={Booki} 
-          link='https://frederick486.github.io/Booki/'
-        />
-        <Product
-          img={Booki} 
-          link='https://frederick486.github.io/Booki/'
-        />
-        <Product
-          img={Linkedin} 
-          link='https://www.linkedin.com/feed/'
+          img={Ohmyfood} 
+          link='https://frederick486.github.io/ohmyfood/'
         />
         <Product
           img={Booki} 
           link='https://frederick486.github.io/Booki/'
+        />        
+        <Product
+          img={FitClub} 
+          link='https://fitclub-i6xuyrgis-frederick486.vercel.app/'
+        />
+        <Product
+          img={Kasa} 
+          link='https://kasa-vercel.vercel.app/'
         />
 
       </div>
