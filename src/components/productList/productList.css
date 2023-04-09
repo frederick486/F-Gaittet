@@ -26,7 +26,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 938px) {
     .pl {
         padding: 10px;
     }    
@@ -41,5 +41,9 @@
 
     .pl-title{
         font-size: 30px;
+    }
+
+    .pl-list {
+        justify-content: space-around;
     }
 }

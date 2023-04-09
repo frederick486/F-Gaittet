@@ -11,12 +11,10 @@ const ProductList = () => {
   return (
     <div className='pl'>
       <div className="pl-texts">
-        <h1 className='pl-title'>Create & inspire. It's Lama</h1>
+        <h1 className='pl-title'>Bienvenu sur mon portfolio</h1>
         <p className="pl-desc">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Deserunt beatae accusantium odit iste, omnis velit itaque, 
-            tempore harum asperiores facere eveniet tempora sint nisi 
-            ut est nobis vero aliquid quasi.
+          Vous trouverez ci-dessous quelques exemples des projets que j'ai réalisés. 
+          Pour accéder au site, cliquez sur sa miniature…
         </p>
       </div>
       <div className="pl-list">
