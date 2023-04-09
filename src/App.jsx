@@ -21,10 +21,10 @@ const App = () => {
       }}    
     >
         <Toggle/>
-        {/* <Intro/> */}
-        {/* <About/> */}
+        <Intro/>
+        <About/>
         <ProductList/>
-        {/* <Contact/> */}
+        <Contact/>
     </div>
   );
 };
